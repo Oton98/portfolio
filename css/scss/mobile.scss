@@ -1,0 +1,417 @@
+@media screen and (max-width: 720px) {
+
+    .navbar-mobile {
+        display: block;
+    }
+
+    .navbar-full {
+        display: none;
+    }
+
+    .presentation {
+
+        flex-direction: column;
+        column-gap: 24px;
+        width: 100%;
+        margin: 0;
+
+
+        &-container {
+
+            border-radius: 16px;
+            width: 85%;
+
+            &-image {
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 24px;
+
+            }
+        }
+
+        &-text {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 85%;
+            row-gap: 3vh;
+
+            &-title {
+                margin-top: 16px;
+                font-size: 4vh;
+            }
+
+            &-description {
+                font-size: 3vh;
+            }
+        }
+    }
+
+    .experiencia {
+        margin-bottom: 40px;
+
+        &-title {
+
+            text-underline-offset: 0.5em;
+            margin: 40px 0px;
+
+            h3 {
+                font-size: 32px;
+            }
+        }
+
+        &-text {
+
+            flex-direction: column;
+            align-items: center;
+            column-gap: 0px;
+            row-gap: 24px;
+
+            &-estudios {
+
+                flex-direction: column;
+                justify-content: space-evenly;
+                width: 80%;
+                row-gap: 24px;
+
+                &-cursos {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    color: #F6F8FF;
+                    border-left: 2px solid #F6F8FF;
+                    border-radius: 12px;
+                    padding: 12px;
+                    font-size: 24px;
+                    background-color: #161B31;
+                }
+            }
+
+            &-laboral {
+
+                display: flex;
+                flex-direction: column;
+                width: 80%;
+                row-gap: 24px;
+
+                &-empleo {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    color: #F6F8FF;
+                    border-left: 2px solid #F6F8FF;
+                    ;
+                    border-radius: 12px;
+                    padding: 12px;
+                    font-size: 16px;
+                    background-color: #161B31;
+                }
+            }
+        }
+    }
+
+    .conocimientos {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+
+
+        &-title {
+
+            margin: 40px 0px;
+
+            h3 {
+                font-size: 32px;
+            }
+        }
+
+        &-cards {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            column-gap: 12vh;
+            row-gap: 12vh;
+            margin-bottom: 32px;
+
+            &-1group {
+                display: flex;
+                flex-direction: row;
+                column-gap: 16px;
+                row-gap: 0px;
+
+                &-card {
+                    display: flex;
+                    flex-direction: column;
+                    column-gap: 12px;
+                    align-items: baseline;
+                    color: #404040;
+
+                }
+
+                &-card i {
+                    font-size: 42px;
+                    color: #6A8BF5;
+                }
+
+                &-card h3 {
+                    display: none;
+                }
+            }
+
+            &-2group {
+                display: flex;
+                flex-direction: row;
+                column-gap: 16px;
+                row-gap: 16px;
+
+                &-card {
+                    display: flex;
+                    align-items: baseline;
+                    color: #404040;
+                }
+
+                &-card i {
+                    font-size: 42px;
+
+                }
+
+                &-card h3 {
+                    display: none;
+                }
+            }
+        }
+
+    }
+
+    .portfolio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #F6F8FF;
+        margin-bottom: 40px;
+
+
+        &-title {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #F6F8FF;
+            text-decoration: underline;
+            text-underline-offset: 0.5em;
+            margin: 40px 0px;
+
+            h3 {
+                font-size: 32px;
+            }
+        }
+
+        &-cards {
+
+            column-gap: 4vh;
+            row-gap: 4vh;
+            width: 80%;
+
+        }
+
+    }
+
+    .contacto {
+
+        &-title {
+
+            margin: 32px 0px;
+
+            h3 {
+                margin: 24px;
+                font-size: 32px;
+            }
+        }
+
+        &-text {
+
+            display: flex;
+            justify-content: space-evenly;
+
+            &-social {
+                row-gap: 16px;
+                color: #F6F8FF;
+                font-size: 20px;
+                transition: .5s;
+                margin-bottom: 48px;
+
+                &-content {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    row-gap: 16px;
+                }
+            }
+
+            &-social i {
+                font-size: 24px;
+            }
+
+            &-social span {
+                display: none;
+            }
+
+            &-social:hover {
+                color: #668CF6;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .navbar-mobile {
+        display: block;
+
+    }
+
+    .navbar-full {
+        display: none;
+    }
+
+    .bg-custom {
+        background-color: #00010F;
+        opacity: 0.9;;
+      }
+    
+      .bg-dark-custom .navbar-toggler-icon {
+        color: #FBF7FF; 
+      }
+      
+      .bg-dark-custom .navbar-nav .nav-link {
+        color: #FBF7FF; 
+      }
+
+      .bg-dark-custom .navbar-nav .nav-link:hover {
+        color: #668CF6; 
+        text-decoration: underline;
+        transition: 0.5s; 
+      }
+}
+
+@media screen and (max-width: 1200px) {
+
+
+    .presentation {
+
+        flex-direction: column;
+        column-gap: 24px;
+        width: 80%;
+        margin: 0;
+
+
+        &-container {
+
+            border-radius: 16px;
+            width: 85%;
+
+            &-image {
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 24px;
+
+            }
+        }
+
+        &-text {
+
+            display: flex;
+            flex-direction: column;
+            width: 85%;
+            row-gap: 3vh;
+
+            &-title {
+                margin-top: 16px;
+                font-size: 4vh;
+            }
+
+            &-description {
+                font-size: 3vh;
+            }
+        }
+    }
+
+    .experiencia {
+        margin-bottom: 40px;
+
+        &-title {
+
+            text-underline-offset: 0.5em;
+            margin: 40px 0px;
+
+            h3 {
+                font-size: 32px;
+            }
+        }
+
+        &-text {
+
+            flex-direction: column;
+            align-items: center;
+            column-gap: 0px;
+            row-gap: 24px;
+
+            &-estudios {
+
+                flex-direction: column;
+                justify-content: space-evenly;
+                width: 80%;
+                row-gap: 24px;
+
+                &-cursos {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    color: #F6F8FF;
+                    border-left: 2px solid #F6F8FF;
+                    border-radius: 12px;
+                    padding: 12px;
+                    font-size: 24px;
+                    background-color: #161B31;
+                }
+            }
+
+            &-laboral {
+
+                display: flex;
+                flex-direction: column;
+                width: 80%;
+                row-gap: 24px;
+
+                &-empleo {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    color: #F6F8FF;
+                    border-left: 2px solid #F6F8FF;
+                    ;
+                    border-radius: 12px;
+                    padding: 12px;
+                    font-size: 16px;
+                    background-color: #161B31;
+                }
+            }
+        }
+    }
+
+}

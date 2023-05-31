@@ -19,6 +19,14 @@ body {
   background-color: #00010F;
 }
 
+.navbar-mobile {
+  display: none;
+}
+
+.navbar-full {
+  display: show;
+}
+
 .navbar {
   display: flex;
   justify-content: center;
@@ -221,7 +229,7 @@ body {
   flex-wrap: wrap;
   column-gap: 4vh;
   row-gap: 4vh;
-  width: 50%;
+  width: 65%;
 }
 .portfolio-cards-card {
   display: flex;
@@ -319,6 +327,322 @@ body {
 .conocimientos-cards-2group-card i {
   font-size: 32px;
   color: #6A8BF5;
+}
+
+@media screen and (max-width: 720px) {
+  .navbar-mobile {
+    display: block;
+  }
+  .navbar-full {
+    display: none;
+  }
+  .presentation {
+    flex-direction: column;
+    column-gap: 24px;
+    width: 100%;
+    margin: 0;
+  }
+  .presentation-container {
+    border-radius: 16px;
+    width: 85%;
+  }
+  .presentation-container-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 24px;
+  }
+  .presentation-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 85%;
+    row-gap: 3vh;
+  }
+  .presentation-text-title {
+    margin-top: 16px;
+    font-size: 4vh;
+  }
+  .presentation-text-description {
+    font-size: 3vh;
+  }
+  .experiencia {
+    margin-bottom: 40px;
+  }
+  .experiencia-title {
+    text-underline-offset: 0.5em;
+    margin: 40px 0px;
+  }
+  .experiencia-title h3 {
+    font-size: 32px;
+  }
+  .experiencia-text {
+    flex-direction: column;
+    align-items: center;
+    column-gap: 0px;
+    row-gap: 24px;
+  }
+  .experiencia-text-estudios {
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 80%;
+    row-gap: 24px;
+  }
+  .experiencia-text-estudios-cursos {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: #F6F8FF;
+    border-left: 2px solid #F6F8FF;
+    border-radius: 12px;
+    padding: 12px;
+    font-size: 24px;
+    background-color: #161B31;
+  }
+  .experiencia-text-laboral {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    row-gap: 24px;
+  }
+  .experiencia-text-laboral-empleo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: #F6F8FF;
+    border-left: 2px solid #F6F8FF;
+    border-radius: 12px;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #161B31;
+  }
+  .conocimientos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+  .conocimientos-title {
+    margin: 40px 0px;
+  }
+  .conocimientos-title h3 {
+    font-size: 32px;
+  }
+  .conocimientos-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 12vh;
+    row-gap: 12vh;
+    margin-bottom: 32px;
+  }
+  .conocimientos-cards-1group {
+    display: flex;
+    flex-direction: row;
+    column-gap: 16px;
+    row-gap: 0px;
+  }
+  .conocimientos-cards-1group-card {
+    display: flex;
+    flex-direction: column;
+    column-gap: 12px;
+    align-items: baseline;
+    color: #404040;
+  }
+  .conocimientos-cards-1group-card i {
+    font-size: 42px;
+    color: #6A8BF5;
+  }
+  .conocimientos-cards-1group-card h3 {
+    display: none;
+  }
+  .conocimientos-cards-2group {
+    display: flex;
+    flex-direction: row;
+    column-gap: 16px;
+    row-gap: 16px;
+  }
+  .conocimientos-cards-2group-card {
+    display: flex;
+    align-items: baseline;
+    color: #404040;
+  }
+  .conocimientos-cards-2group-card i {
+    font-size: 42px;
+  }
+  .conocimientos-cards-2group-card h3 {
+    display: none;
+  }
+  .portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #F6F8FF;
+    margin-bottom: 40px;
+  }
+  .portfolio-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F6F8FF;
+    text-decoration: underline;
+    text-underline-offset: 0.5em;
+    margin: 40px 0px;
+  }
+  .portfolio-title h3 {
+    font-size: 32px;
+  }
+  .portfolio-cards {
+    column-gap: 4vh;
+    row-gap: 4vh;
+    width: 80%;
+  }
+  .contacto-title {
+    margin: 32px 0px;
+  }
+  .contacto-title h3 {
+    margin: 24px;
+    font-size: 32px;
+  }
+  .contacto-text {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .contacto-text-social {
+    row-gap: 16px;
+    color: #F6F8FF;
+    font-size: 20px;
+    transition: 0.5s;
+    margin-bottom: 48px;
+  }
+  .contacto-text-social-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 16px;
+  }
+  .contacto-text-social i {
+    font-size: 24px;
+  }
+  .contacto-text-social span {
+    display: none;
+  }
+  .contacto-text-social:hover {
+    color: #668CF6;
+  }
+}
+@media screen and (max-width: 980px) {
+  .navbar-mobile {
+    display: block;
+  }
+  .navbar-full {
+    display: none;
+  }
+  .bg-custom {
+    background-color: #00010F;
+    opacity: 0.9;
+  }
+  .bg-dark-custom .navbar-toggler-icon {
+    color: #FBF7FF;
+  }
+  .bg-dark-custom .navbar-nav .nav-link {
+    color: #FBF7FF;
+  }
+  .bg-dark-custom .navbar-nav .nav-link:hover {
+    color: #668CF6;
+    text-decoration: underline;
+    transition: 0.5s;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .presentation {
+    flex-direction: column;
+    column-gap: 24px;
+    width: 80%;
+    margin: 0;
+  }
+  .presentation-container {
+    border-radius: 16px;
+    width: 85%;
+  }
+  .presentation-container-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 24px;
+  }
+  .presentation-text {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    row-gap: 3vh;
+  }
+  .presentation-text-title {
+    margin-top: 16px;
+    font-size: 4vh;
+  }
+  .presentation-text-description {
+    font-size: 3vh;
+  }
+  .experiencia {
+    margin-bottom: 40px;
+  }
+  .experiencia-title {
+    text-underline-offset: 0.5em;
+    margin: 40px 0px;
+  }
+  .experiencia-title h3 {
+    font-size: 32px;
+  }
+  .experiencia-text {
+    flex-direction: column;
+    align-items: center;
+    column-gap: 0px;
+    row-gap: 24px;
+  }
+  .experiencia-text-estudios {
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 80%;
+    row-gap: 24px;
+  }
+  .experiencia-text-estudios-cursos {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: #F6F8FF;
+    border-left: 2px solid #F6F8FF;
+    border-radius: 12px;
+    padding: 12px;
+    font-size: 24px;
+    background-color: #161B31;
+  }
+  .experiencia-text-laboral {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    row-gap: 24px;
+  }
+  .experiencia-text-laboral-empleo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: #F6F8FF;
+    border-left: 2px solid #F6F8FF;
+    border-radius: 12px;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #161B31;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

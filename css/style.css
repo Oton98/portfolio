@@ -1,0 +1,324 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+  min-width: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #00010F;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  position: fixed;
+  width: 100%;
+  background-color: #00010F;
+  opacity: 90%;
+}
+.navbar-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 5vw;
+  margin: 24px;
+  color: #FBF7FF;
+  text-decoration: none;
+  list-style: none;
+  width: 100%;
+  text-transform: uppercase;
+}
+.navbar-buttons li:hover {
+  transition: 0.5s;
+}
+.navbar-buttons li:hover {
+  color: #668CF6;
+  border-bottom: 1px solid #FBF7FF;
+}
+
+.contacto {
+  background-color: #161B31;
+}
+.contacto-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #F6F8FF;
+  text-decoration: underline;
+  text-underline-offset: 0.5em;
+  margin: 32px 0px;
+}
+.contacto-title h3 {
+  margin: 24px;
+  font-size: 42px;
+}
+.contacto-text {
+  display: flex;
+  justify-content: space-evenly;
+}
+.contacto-text-social {
+  row-gap: 16px;
+  color: #F6F8FF;
+  font-size: 20px;
+  transition: 0.5s;
+  margin-bottom: 48px;
+}
+.contacto-text-social-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 16px;
+}
+.contacto-text-social i {
+  font-size: 24px;
+}
+.contacto-text-social:hover {
+  color: #668CF6;
+}
+
+.experiencia {
+  margin-bottom: 80px;
+}
+.experiencia-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #F6F8FF;
+  text-decoration: underline;
+  text-underline-offset: 0.5em;
+  margin: 80px 0px;
+}
+.experiencia-title h3 {
+  font-size: 42px;
+}
+.experiencia-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  column-gap: 64px;
+}
+.experiencia-text-estudios {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 20%;
+  row-gap: 24px;
+}
+.experiencia-text-estudios-cursos {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: #F6F8FF;
+  border-left: 2px solid #F6F8FF;
+  border-radius: 12px;
+  padding: 12px;
+  font-size: 24px;
+  background-color: #161B31;
+}
+.experiencia-text-laboral {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  row-gap: 24px;
+}
+.experiencia-text-laboral-empleo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: #F6F8FF;
+  border-left: 2px solid #F6F8FF;
+  border-radius: 12px;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #161B31;
+}
+
+.contenedor-principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.presentation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 24px;
+  width: 80%;
+  margin: 10vh;
+}
+.presentation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #161B31;
+  border-radius: 16px;
+  width: 40%;
+}
+.presentation-container-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 24px;
+}
+.presentation-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: #F6F8FF;
+  width: 40%;
+  row-gap: 5vh;
+}
+.presentation-text-title {
+  font-size: 5vh;
+}
+.presentation-text-description {
+  font-size: 3vh;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #F6F8FF;
+  margin-bottom: 80px;
+}
+.portfolio-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #F6F8FF;
+  text-decoration: underline;
+  text-underline-offset: 0.5em;
+  margin: 80px 0px;
+}
+.portfolio-title h3 {
+  font-size: 42px;
+}
+.portfolio-cards {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 4vh;
+  row-gap: 4vh;
+  width: 50%;
+}
+.portfolio-cards-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 40vh;
+  background-color: #161B31;
+  border-radius: 16px;
+  height: 400px;
+  transition: box-shadow 0.3s ease;
+}
+.portfolio-cards-card-title {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 16px;
+  color: #F6F8FF;
+  font-size: 24px;
+  text-decoration: underline;
+}
+.portfolio-cards-card-image {
+  margin: 8px;
+  background-color: #F6F8FF;
+  width: 80%;
+}
+.portfolio-cards-card-image img {
+  width: 100%;
+}
+.portfolio-cards-card-description {
+  display: flex;
+  font-size: 16px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  color: #F6F8FF;
+  padding: 24px;
+}
+.portfolio-cards-card:hover {
+  box-shadow: 0 0 10px 3px #F1F1E6;
+}
+
+.conocimientos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.conocimientos-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #404040;
+  text-decoration: underline;
+  text-underline-offset: 0.5em;
+  margin: 80px 0px;
+}
+.conocimientos-title h3 {
+  font-size: 42px;
+}
+.conocimientos-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 12vh;
+  margin-bottom: 64px;
+}
+.conocimientos-cards-1group {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+.conocimientos-cards-1group-card {
+  display: flex;
+  column-gap: 12px;
+  align-items: baseline;
+  color: #404040;
+}
+.conocimientos-cards-1group-card i {
+  font-size: 32px;
+  color: #6A8BF5;
+}
+.conocimientos-cards-2group {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+.conocimientos-cards-2group-card {
+  display: flex;
+  column-gap: 12px;
+  align-items: baseline;
+  color: #404040;
+}
+.conocimientos-cards-2group-card i {
+  font-size: 32px;
+  color: #6A8BF5;
+}
+
+/*# sourceMappingURL=style.css.map */

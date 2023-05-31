@@ -1,0 +1,32 @@
+.navbar{
+    display: flex;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    position: fixed;
+    width: 100%;
+    background-color: #00010F;
+    opacity: 90%;
+
+    &-buttons{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        column-gap: 5vw;
+        margin: 24px;
+        color:#FBF7FF;
+        text-decoration: none;
+        list-style: none;
+        width: 100%;
+        text-transform: uppercase;
+    }
+
+    &-buttons li:hover{
+        transition: .5s;
+    }
+
+    &-buttons li:hover{
+        color: #668CF6;
+        border-bottom: 1px solid #FBF7FF;
+    }
+}
